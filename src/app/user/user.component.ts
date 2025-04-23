@@ -27,6 +27,7 @@ export class UserComponent implements OnInit{
 
   LoadUsers(){
     this.service.LoadUsers().subscribe(item=>{
+      
       this.usersList=item;
       // localStorage.setItem('usersList', JSON.stringify(this.usersList));
     })
