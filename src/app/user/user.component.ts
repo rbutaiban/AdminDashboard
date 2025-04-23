@@ -34,7 +34,10 @@ export class UserComponent implements OnInit{
   }
 
   addUser(){
-    let newUser: User = {id: 4,name:"Alice Johnson",email:"alice@example.com","role": "admin",
+    let newUser: User = {id: 4,
+        name:"Alice Johnson",
+        email:"alice@example.com",
+        role: "admin",
         status: "active",
         createdAt: new Date,
         lastLogin: new Date,
@@ -42,7 +45,12 @@ export class UserComponent implements OnInit{
         avatarUrl: "https://i.pravatar.cc/100?img=1"};
 
         this.usersList.push(newUser);
+
   }
+
+  // filterUser(value: string) {
+  //   this.usersList = this.usersList.filter((item) => item.status === 'banned')
+  // }
 
   
 }
